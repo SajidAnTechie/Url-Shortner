@@ -1,0 +1,52 @@
+html,
+body {
+  height: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}
+@media (max-width: 1000px) {
+  .content-section {
+    width: 96%;
+  }
+}
+.content {
+  width: 100%;
+}
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0.09rem #388e3c !important;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #388e3c;
+  border: 0px;
+  border-radius: 0.25rem;
+  color: white;
+}
+.errormessage {
+  color: red;
+}
+.result {
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  padding: 15px;
+  background-color: #388e3c;
+}

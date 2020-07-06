@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL SHORTNER</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="content-section">
+      <div class="content">
+        <div class="header">
+          <h2>Url Shortner</h2>
+        </div>
+        <div class="errormessage">
+          <%= typeof errorMsg !="undefined"? errorMsg:"" %>
+        </div>
+
+        <form action="/post" method="post">
+          <div class="form-group">
+            <label for="originalUrl">Original Url </label>
+            <input
+              type="text"
+              name="originalUrl"
+              class="form-control"
+              placeholder="eg: https://www.upwork.com/o/profiles/users/~01277a7858c989b81d/"
+            />
+          </div>
+          <div class="form-group">
+            <label for="originalUrl">Custom Url </label>
+            <input
+              type="text"
+              name="customUrl"
+              class="form-control"
+              placeholder="eg: my-upworkProfile"
+            />
+          </div>
+          <button type="submit">Shrink</button>
+        </form>
+        <%if (typeof result !=="undefined") { %>
+        <div class="result">
+          <%= result%>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>
