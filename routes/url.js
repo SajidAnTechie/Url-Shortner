@@ -23,7 +23,6 @@ module.exports = (app) => {
         originalUrl,
         customUrl,
       };
-      console.log("hello");
       const createUrl = await Url.create(newBody);
 
       genShortUrl(req, createUrl.customUrl, res);
