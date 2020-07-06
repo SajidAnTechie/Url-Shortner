@@ -2,4 +2,4 @@
 
 ## Overview
 
-![Url SHortner](/img/screenshot.png "Url Shortner")
+![Url SHortner](img/screenshot.PNG "Url Shortner")
