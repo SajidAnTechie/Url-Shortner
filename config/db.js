@@ -1,12 +1,15 @@
 const mongoose = require("mongoose");
 
 const connectDB = async () => {
-  const conn = await mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true,
-  });
+  const conn = await mongoose.connect(
+    "mongodb+srv://sajid:sajidansari33272@contacts-22jvx.mongodb.net/contact?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useCreateIndex: true,
+      useFindAndModify: false,
+      useUnifiedTopology: true,
+    }
+  );
   console.log(
     `Mongo database connected on ${conn.connection.host}`.cyan.underline.bold
   );
