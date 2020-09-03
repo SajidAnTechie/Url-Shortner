@@ -1,4 +1,6 @@
 # Url Shortner
+## [Live Preview](https://urlminify.herokuapp.com/)
+
 
 ## Overview
 
